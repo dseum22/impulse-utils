@@ -1,0 +1,51 @@
+{
+    "name": "impulse-utils",
+    "version": "0.1.2",
+    "description": "Basic React utilities",
+    "main": "./lib/cjs/index.js",
+    "module": "./lib/esm/index.js",
+    "types": "./lib/esm/index.d.ts",
+    "scripts": {
+        "build": "npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+    },
+    "prepublish": "tsc",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dseum22/impulse-utils.git"
+    },
+    "keywords": [
+        "javascript",
+        "jsx",
+        "react",
+        "utilities",
+        "manipulation",
+        "components"
+    ],
+    "author": {
+        "name": "Dennis Eum",
+        "url": "https://denniseum.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dseum22/impulse-utils/issues"
+    },
+    "homepage": "https://github.com/dseum22/impulse-utils",
+    "devDependencies": {
+        "typescript": "^4.4.3"
+    },
+    "dependencies": {
+        "@types/react": "^17.0.20",
+        "@types/react-dom": "^17.0.9",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "files": [
+        "/lib"
+    ]
+}
